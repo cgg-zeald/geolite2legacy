@@ -32,7 +32,7 @@ jobs:
 
 
       - name: Build 
-        run: cd $GITHUB_WORKSPACE && docker build . -t geolite2legacy
+        run: cd $GITHUB_WORKSPACE && docker build . -t geolite2legacy:latest
 
       - name: Push
         run: $GITHUB_WORKSPACE/tools/docker-push.sh
