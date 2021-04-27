@@ -33,6 +33,6 @@ jobs:
 
       - name: Build 
         run: |
-            cd $GITHUB_WORKSPACE && docker build . -t geolite2legacy:latest
-            docker tag  geolite2legacy:latest docker.pkg.github.com/cgg-zeald/geolite2legacy:latest
+            cd $GITHUB_WORKSPACE
+            docker build . -t docker.pkg.github.com/cgg-zeald/geolite2legacy/geolite2legacy:latest
             docker push docker.pkg.github.com/cgg-zeald/geolite2legacy/geolite2legacy:latest 
